@@ -53,7 +53,7 @@ const ChangePassword = () => {
 
     try{
 
-      const response = await axios.put('http://localhost:8000/api/v1/user/update/password' ,  passwordInfo  , config ) ; 
+      const response = await axios.put('https://psrealtor.onrender.com/api/v1/user/update/password' ,  passwordInfo  , config ) ; 
       console.log(response)  ;
       toast.success(response?.data?.message?.message) ; 
 

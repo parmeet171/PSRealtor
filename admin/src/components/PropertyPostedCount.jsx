@@ -12,7 +12,7 @@ const PropertyPostedCount = ({id}) => {
         ;(async () => {
             try{
 
-                const response = await axios.get(`http://localhost:8000/api/v1/admin/properties/posted/${id}`); 
+                const response = await axios.get(`https://psrealtor.onrender.com/api/v1/admin/properties/posted/${id}`); 
                 setPostedCount(response?.data?.data?.length) ;
             }
             catch(err ) 

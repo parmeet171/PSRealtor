@@ -9,7 +9,7 @@ const Users = () => {
   const getAllUsers = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/v1/admin/users"
+        "https://psrealtor.onrender.com/api/v1/admin/users"
       );
       setUsers(response?.data?.data);
     } catch (err) {
@@ -24,7 +24,7 @@ const Users = () => {
   const deleteUser = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/v1/admin/user/${id}`
+        `https://psrealtor.onrender.com/api/v1/admin/user/${id}`
       );
       console.log(response);
       toast.success("User deleted");
@@ -37,7 +37,7 @@ const Users = () => {
   const getOwners  = async () => {
     try{
       const response = await axios.get(
-        `http://localhost:8000/api/v1/admin/get/owners`
+        `https://psrealtor.onrender.com/api/v1/admin/get/owners`
       );
       console.log(response);
       setUsers(response?.data?.data) ;
@@ -53,7 +53,7 @@ const Users = () => {
   const getBuilders   = async () => {
     try{
       const response = await axios.get(
-        `http://localhost:8000/api/v1/admin/get/builders`
+        `https://psrealtor.onrender.com/api/v1/admin/get/builders`
       );
       console.log(response);
       setUsers(response?.data?.data) ;
@@ -70,7 +70,7 @@ const Users = () => {
   const getDealers = async () => {
     try{
       const response = await axios.get(
-        `http://localhost:8000/api/v1/admin/get/dealers`
+        `https://psrealtor.onrender.com/api/v1/admin/get/dealers`
       );
       console.log(response);
       setUsers(response?.data?.data) ;

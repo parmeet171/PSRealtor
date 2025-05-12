@@ -35,7 +35,7 @@ const ChatArea = ({ postedBy   , setChatAreaComp}) => {
     (async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/v1/message/${postedBy?._id}`,
+          `https://psrealtor.onrender.com/api/v1/message/${postedBy?._id}`,
           config
         );
         console.log(response)  ; 
@@ -77,7 +77,7 @@ const ChatArea = ({ postedBy   , setChatAreaComp}) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/message/",
+        "https://psrealtor.onrender.com/api/v1/message/",
         data,
         config
       );

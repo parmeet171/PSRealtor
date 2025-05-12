@@ -19,7 +19,7 @@ const ContactOwner = () => {
     (async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/v1/user/${id}`
+          `https://psrealtor.onrender.com/api/v1/user/${id}`
         );
         console.log(response);
         setOwnerDetails(response?.data?.data);

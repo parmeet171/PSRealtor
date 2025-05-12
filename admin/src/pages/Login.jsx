@@ -29,7 +29,7 @@ const Login = () => {
     }
 
     try{
-        const response = await axios.post('http://localhost:8000/api/v1/admin/login' , data ) ; 
+        const response = await axios.post('https://psrealtor.onrender.com/api/v1/admin/login' , data ) ; 
         console.log(response) ; 
         navitateTo('/home') ; 
     }

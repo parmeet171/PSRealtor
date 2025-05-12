@@ -22,7 +22,7 @@ const ModifyProfile = () => {
     (async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/v1/user/get/user",
+          "https://psrealtor.onrender.com/api/v1/user/get/user",
           config
         );
         console.log(response);
@@ -80,7 +80,7 @@ const ModifyProfile = () => {
 
     try {
       const response = await axios.put(
-        "http://localhost:8000/api/v1/user/modify/profile",
+        "https://psrealtor.onrender.com/api/v1/user/modify/profile",
         userData,
         config
       );
@@ -91,7 +91,7 @@ const ModifyProfile = () => {
         const formData = new FormData();
         formData.append("avatar", image);
         const uploadPhotoResponse = await axios.put(
-          "http://localhost:8000/api/v1/user/upload/avatar",
+          "https://psrealtor.onrender.com/api/v1/user/upload/avatar",
           formData,
           config
         );

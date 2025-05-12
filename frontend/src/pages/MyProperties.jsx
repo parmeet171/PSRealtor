@@ -23,7 +23,7 @@ const tkn = localStorage.getItem("accessToken");
     useEffect(() => {
         ;(async () => {
             try{
-                const response = await axios.get('http://localhost:8000/api/v1/property/my/properties' , config ) ;
+                const response = await axios.get('https://psrealtor.onrender.com/api/v1/property/my/properties' , config ) ;
                 console.log(response?.data?.data) ;
                 setMyProperties(response?.data?.data)  ;
                 if(response?.data?.data?.length == 0 ) setNoResults(true) ;

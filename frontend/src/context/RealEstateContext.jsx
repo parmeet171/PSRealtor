@@ -405,7 +405,7 @@ const RealEstateContext = (props) => {
   }, [socket]);
 
   useEffect(() => {
-    const newSocket = io("http://localhost:8000");
+    const newSocket = io("https://psrealtor.onrender.com");
     const tkn = localStorage.getItem("accessToken");
     if (tkn) {
       const config = {
@@ -416,7 +416,7 @@ const RealEstateContext = (props) => {
       (async () => {
         try {
           const response = await axios.get(
-            "http://localhost:8000/api/v1/user/get/user",
+            "https://psrealtor.onrender.com/api/v1/user/get/user",
             config
           );
           console.log("response = ", response);

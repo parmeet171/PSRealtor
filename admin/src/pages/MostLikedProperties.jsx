@@ -15,7 +15,7 @@ const MostLikedProperties = () => {
         ;(async () => {
           try{
     
-            const response = await axios.get('http://localhost:8000/api/v1/admin/most/liked/properties') ;
+            const response = await axios.get('https://psrealtor.onrender.com/api/v1/admin/most/liked/properties') ;
             console.log(response ) ;
             if(response?.data?.data?.length == 0 ) setNoResults(true) ;
     

@@ -93,7 +93,7 @@ const RentCard = ({ liked = false, property, myProperties = 0 }) => {
     console.log(id);
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/v1/admin/property/${id}`
+        `https://psrealtor.onrender.com/api/v1/admin/property/${id}`
       );
       console.log(response);
     } catch (err) {
@@ -119,7 +119,7 @@ const RentCard = ({ liked = false, property, myProperties = 0 }) => {
 
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/v1/property/update/property/${id}`,
+        `https://psrealtor.onrender.com/api/v1/property/update/property/${id}`,
         data,
         config
       );

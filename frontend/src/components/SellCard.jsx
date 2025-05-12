@@ -120,7 +120,7 @@ const SellCard = ({ liked = false, key, property, myProperties = 0 }) => {
 
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/v1/property/update/property/${id}`,
+        `https://psrealtor.onrender.com/api/v1/property/update/property/${id}`,
         data,
         config
       );
@@ -135,7 +135,7 @@ const SellCard = ({ liked = false, key, property, myProperties = 0 }) => {
   // const deleteProperty = async (id) => {
   //   console.log(id) ;
   //   try{
-  //     const response = await axios.delete(`http://localhost:8000/api/v1/admin/property/${id}`);
+  //     const response = await axios.delete(`https://psrealtor.onrender.com/api/v1/admin/property/${id}`);
   //     console.log(response ) ;
   //     toast.success("property deleted") ;
 

@@ -24,7 +24,7 @@ const ChattingArea = () => {
     (async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/v1/message/${currentChatWith?._id}`,
+          `https://psrealtor.onrender.com/api/v1/message/${currentChatWith?._id}`,
           config
         );
         console.log(response)  ; 
@@ -66,7 +66,7 @@ const ChattingArea = () => {
     };
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/message/",
+        "https://psrealtor.onrender.com/api/v1/message/",
         data,
         config
       );

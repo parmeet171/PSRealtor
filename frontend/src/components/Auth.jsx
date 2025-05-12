@@ -67,7 +67,7 @@ const Auth = () => {
     try {
       if (isLoginPage) {
         const response = await axios.post(
-          "http://localhost:8000/api/v1/user/login",
+          "https://psrealtor.onrender.com/api/v1/user/login",
           data
         );
         console.log(response);

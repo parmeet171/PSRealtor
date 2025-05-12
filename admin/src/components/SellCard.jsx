@@ -119,7 +119,7 @@ const SellCard = ({  likeCount = 0 , searchCount = 0 , key, property}) => {
   const deleteProperty = async (id) => {
     console.log(id) ;
     try{
-      const response = await axios.delete(`http://localhost:8000/api/v1/admin/property/${id}`);
+      const response = await axios.delete(`https://psrealtor.onrender.com/api/v1/admin/property/${id}`);
       console.log(response ) ;
       toast.success("property deleted") ;
 

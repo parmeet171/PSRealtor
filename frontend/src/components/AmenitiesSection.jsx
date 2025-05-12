@@ -47,7 +47,7 @@ const AmenitiesSection = () => {
             postedBy : userID 
           }
           setData(newData) ;
-          const response = await axios.post("http://localhost:8000/api/v1/property/create" , newData  )  ;
+          const response = await axios.post("https://psrealtor.onrender.com/api/v1/property/create" , newData  )  ;
         response?.data?.data?.message && toast.success(response?.data?.data?.message) ;
         console.log(response);
         
@@ -59,7 +59,7 @@ const AmenitiesSection = () => {
           filteredImagesLists.map((file) => {
             formData.append("images" , file) ;
           })
-          const imageUploadResponse = await axios.put(`http://localhost:8000/api/v1/property/upload/photos/${response?.data?.data?._id}` , formData) ; 
+          const imageUploadResponse = await axios.put(`https://psrealtor.onrender.com/api/v1/property/upload/photos/${response?.data?.data?._id}` , formData) ; 
           console.log("image uplaoded" , imageUploadResponse ) ;
           response?.data?.message?.message && toast.success(imageUploadResponse?.data?.message?.message); 
         }

@@ -110,7 +110,7 @@ const Property = () => {
   const checkIfPropertyLiked = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/v1/liked/property/check/liked/${id}`,
+        `https://psrealtor.onrender.com/api/v1/liked/property/check/liked/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -141,7 +141,7 @@ const Property = () => {
     (async () => {
       try {
         const propertyResponse = await axios.get(
-          `http://localhost:8000/api/v1/property/${id}`
+          `https://psrealtor.onrender.com/api/v1/property/${id}`
         );
         console.log("PROPERTY = ", propertyResponse);
         setPropertyData(propertyResponse?.data?.data);
@@ -211,7 +211,7 @@ const Property = () => {
     if (likeBtnClicked == true) {
       try {
         const response = await axios.delete(
-          `http://localhost:8000/api/v1/liked/property/delete/${id}`,
+          `https://psrealtor.onrender.com/api/v1/liked/property/delete/${id}`,
           { data: null },
           {
             headers: {
@@ -229,7 +229,7 @@ const Property = () => {
     } else {
       try {
         const response = await axios.post(
-          `http://localhost:8000/api/v1/liked/property/create/${id}`,
+          `https://psrealtor.onrender.com/api/v1/liked/property/create/${id}`,
           { data: null },
           {
             headers: {

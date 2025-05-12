@@ -16,7 +16,7 @@ const ViewProperties = () => {
     
 
     try{
-      const response =await axios.get('http://localhost:8000/api/v1/admin/active/properties') ;
+      const response =await axios.get('https://psrealtor.onrender.com/api/v1/admin/active/properties') ;
       setProperties(response?.data?.data) ;
       console.log(response) ; 
 
@@ -33,7 +33,7 @@ const ViewProperties = () => {
     
 
     try{
-      const response =await axios.get('http://localhost:8000/api/v1/admin/sold/properties') ;
+      const response =await axios.get('https://psrealtor.onrender.com/api/v1/admin/sold/properties') ;
       setProperties(response?.data?.data) ;
       console.log(response) ; 
 
@@ -50,7 +50,7 @@ const ViewProperties = () => {
   const viewAllProperties = async () => {
     try {
 
-      const response = await axios.get('http://localhost:8000/api/v1/admin/properties'); 
+      const response = await axios.get('https://psrealtor.onrender.com/api/v1/admin/properties'); 
       setProperties(response?.data?.data) ;
       console.log(response) ;
     }

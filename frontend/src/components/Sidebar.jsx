@@ -25,10 +25,10 @@ const Sidebar = () => {
 
     ;(async () => { 
       try{
-        const response = await axios.get('http://localhost:8000/api/v1/chats' , config ); 
+        const response = await axios.get('https://psrealtor.onrender.com/api/v1/chats' , config ); 
         // /api/v1/chats
         console.log('chats = ' , response) ;
-        const user  = await axios.get('http://localhost:8000/api/v1/user/get/user' , config ) ;
+        const user  = await axios.get('https://psrealtor.onrender.com/api/v1/user/get/user' , config ) ;
         setId(user?.data?.data?._id) ;
         console.log('userrrr -> ' , user)  ; 
         const newResponse = response?.data?.data ;  

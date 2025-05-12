@@ -38,13 +38,13 @@ const Properties = () => {
       try {
         if (currentFilteringCondition == "") {
           const response = await axios.get(
-            "http://localhost:8000/api/v1/property/"
+            "https://psrealtor.onrender.com/api/v1/property/"
           );
           console.log(response);
           setProperties(response?.data?.data);
         } else {
           const response = await axios.get(
-            `http://localhost:8000/api/v1/property/${currentFilteringCondition}`
+            `https://psrealtor.onrender.com/api/v1/property/${currentFilteringCondition}`
           );
           console.log(response);
           setProperties(response?.data?.data);

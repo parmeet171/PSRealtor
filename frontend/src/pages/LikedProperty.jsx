@@ -27,7 +27,7 @@ const LikedProperty = () => {
     ;(async () => {
       try{
 
-        const response = await axios.get('http://localhost:8000/api/v1/liked/property/' , config) ; 
+        const response = await axios.get('https://psrealtor.onrender.com/api/v1/liked/property/' , config) ; 
         console.log(response);  
         if(response?.data?.data?.length == 0 ){setNoResults(true)} ;
           setLikedProperty(response?.data?.data) ; 

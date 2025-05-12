@@ -92,7 +92,7 @@ const PgCard = ({ likeCount = 0, searchCount = 0, property }) => {
     console.log(id);
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/v1/admin/property/${id}`
+        `https://psrealtor.onrender.com/api/v1/admin/property/${id}`
       );
       console.log(response);
     } catch (err) {

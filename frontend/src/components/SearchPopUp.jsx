@@ -196,7 +196,7 @@ const SearchPopUp = () => {
     console.log(filteringCondition);
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/v1/property/${filteringCondition}`
+        `https://psrealtor.onrender.com/api/v1/property/${filteringCondition}`
       );
 
       console.log(response);

@@ -30,7 +30,7 @@ const ChatPage = () => {
     (async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/v1/chats`,
+          `https://psrealtor.onrender.com/api/v1/chats`,
           config
         );
         if(response?.data?.data?.length == 0 ) {setNoChats(true)} ;
