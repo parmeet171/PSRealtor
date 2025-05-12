@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+  padding : 0  ;
+  margin : 0  ;
+  box-sizing: border-box; 
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "Outfit", system-ui;
+  background-color: #001f3f ; 
+  
+}
+/* .user-menu-container:hover .user-menu
+{
+  display: block;
+} */
+
+input[type="radio"]:checked::before {
+  transform: scale(2);
+}
+.slick-prev {
+  left: 0% !important;
+  z-index: 1;
+  font-size  : 43px ;
+  background-color: transparent !important ;
+  
+}
+.slick-next {
+  right: 5.5% !important;
+  z-index: 1 ; 
+  font-size  : 43px ;
+  background-color: transparent !important ;
+  
+
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 50px  !important
+}
+
+
+.pac-container{
+  border-radius : 10px  !important ;
+  
+
+}
+.pac-item{
+  border-radius : 25px  !important ; 
+  padding : .5rem !important ; 
+}
+.pac-matched{
+  color : #396d8c ;
+}
+.pac-item:hover{
+  background-color: #ead8b1;
+}
+input[type="date"] { 
+  background: transparent;
+  color: white;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
+.box-shadow {
+  box-shadow:  rgba(67, 67, 67, 0.25) 0px 54px 55px, rgba(174, 173, 173, 0.12) 0px -12px 30px, rgba(211, 209, 209, 0.12) 0px 4px 6px, rgba(217, 215, 215, 0.17) 0px 12px 13px, rgba(204, 203, 203, 0.09) 0px -3px 5px;
+}
+
+.box-shadow2{
+  box-shadow: rgb(246, 245, 245) 0px 1px 4px;
+}
+/* a .active{
+  transform: scale(1.1 , 1.1 )  ; 
+  transition : all .5  ease-in-out  ;
+  background: black 
+  ;
+} */
+ .about {
+  /* background-image : url('./assets/AboutUs.jpg') ;  */
+  background-image : url('./assets/aboutus2.jpg') ; 
+  background-repeat: no-repeat; 
+  background-size : cover; 
+  height: 100vh;
+ }
+
