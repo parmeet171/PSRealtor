@@ -84,7 +84,7 @@ const Auth = () => {
         setPhoto(response?.data?.data?.user?.avatar);
       } else {
         const response = await axios.post(
-          "http://localhost:8000/api/v1/user/register",
+          "https://psrealtor.onrender.com/api/v1/user/register",
           data
         );
         console.log(response);
