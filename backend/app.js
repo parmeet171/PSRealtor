@@ -15,7 +15,7 @@ const server = createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://localhost:3001", "https://magnificent-seahorse-af5365.netlify.app/"],
+    origin: ["http://localhost:3000", "http://localhost:3001", "https://magnificent-seahorse-af5365.netlify.app"],
     credentials: true,
   },
 });
@@ -54,7 +54,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001", "https://magnificent-seahorse-af5365.netlify.app/"],
+    origin: ["http://localhost:3000", "http://localhost:3001", "https://magnificent-seahorse-af5365.netlify.app"],
   })
 );
 app.use("/api/v1/user", userRouter);
