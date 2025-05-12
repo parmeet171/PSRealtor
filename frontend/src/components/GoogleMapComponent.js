@@ -6,7 +6,6 @@ const GoogleMapComponent = ({ address = "rohini sector 24" }) => {
 
   
   const loaderOptions = useMemo(() => ({
-    // googleMapsApiKey: 'AIzaSyC-akEajAp53rZD21LdgEfm7sUJ_jlDLs8', 
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY, 
     libraries: ['places'],
   }), []);

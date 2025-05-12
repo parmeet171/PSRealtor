@@ -5,7 +5,7 @@ import { userRouter } from "./routes/user.route.js";
 import { propertyRouter } from "./routes/property.route.js";
 import { likedPropertyRouter } from "./routes/likedProperty.route.js";
 import { messageRouter } from "./routes/message.route.js";
-import { chatRouter } from "./routes/Chat.route.js";
+import { chatRouter } from "./routes/chat.route.js";
 import { Server } from "socket.io";
 import { createServer } from "http";
 import { adminRouter } from "./routes/admin.route.js";

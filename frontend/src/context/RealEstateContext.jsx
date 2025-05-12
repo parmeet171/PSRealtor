@@ -16,7 +16,6 @@ const RealEstateContext = (props) => {
   const [noSearchResults, setNoSearchResults] = useState(false);
 
   const { isLoaded } = useJsApiLoader({
-    // googleMapsApiKey: "AIzaSyC-akEajAp53rZD21LdgEfm7sUJ_jlDLs8",
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     libraries,
   });
